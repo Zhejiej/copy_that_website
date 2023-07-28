@@ -1,0 +1,177 @@
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    margin-top: 23px;
+    background-color: rgba(64,78,237,255);;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    margin-left: 110px;
+}
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:last-child {
+    margin-right: 0; /* Remove the right margin from the last link */
+}
+
+.login {
+    margin-right: 100px; /* Add left margin to move the "Login" button more to the left */
+}
+.login a {
+    margin-right:200px;
+    display: inline-block;
+    padding: 5px 6px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50px; /* Adjust the border-radius to make it a capsule shape */
+    text-align: center;
+    text-decoration: none;
+    font-weight: none;
+    font-size: 16px;
+    position: relative; /* Add position relative to set the context for absolute positioning */
+}
+
+.login a::before {
+    content: 'Login'; /* Add the word "Login" as a pseudo-element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+main {
+    text-align: center;
+    position: relative; /* Set the main container as the reference for absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main h3 {
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    color: white;
+}
+
+/* Center the "Imagine A Place..." text over the background image */
+main div {
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.button-container {
+    position: absolute; /* Position the container relative to the main container */
+    top: 60%; /* Adjust the top value to control the vertical position */
+    left: 50%; /* Adjust the left value to center the container horizontally */
+    transform: translate(-50%, -50%); /* Center the container horizontally */
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Display the buttons side by side */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.capsule-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50px; /* Adjust the border-radius to make it a capsule shape */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px; /* Adjust the margin to add spacing between buttons */
+    font-size: 19px;
+}
+
+/* Custom style for "Open Discord in your browser" button */
+.custom-button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Styles for the new information sections */
+.info {
+    display: flex;
+}
+
+.info img {
+    width: 850px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.info-text {
+    text-align: left;
+    justify-content: center; /* Center the buttons horizontally */
+    max-width:  700px; /* Set the maximum width of the text container */
+    padding: 85px;
+}
+
+.info h3 {
+    font-size: 45px;
+    color: rgb(11, 11, 11);
+    font: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+.info p {
+    font-size: 22px;
+    color: rgba(35,39,42,255);
+    font: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+
+}
+.info2{
+    background-color:rgba(246,246,246,255) ;
+}
